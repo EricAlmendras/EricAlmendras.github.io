@@ -28,7 +28,14 @@ function estableceNombreUsuario() {
       localStorage.setItem('nombre', miNombre);
       miTitulo.innerHTML = 'Galeria de logos de: ' + miNombre;
     }
-  }
+}
+
+if(!localStorage.getItem('name')) {
+    estableceNombreUsuario();
+} else {
+    let storedName = localStorage.getItem('nombre');
+    miTitulo.innerHTML = 'Galeria de logos de: ' + storedName;
+}
 
 miBoton.onclick = function() {
     estableceNombreUsuario();
