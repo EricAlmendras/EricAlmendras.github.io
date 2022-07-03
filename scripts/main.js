@@ -30,7 +30,7 @@ function estableceNombreUsuario() {
     }
 }
 
-if(!localStorage.getItem('name')) {
+if(!localStorage.getItem('nombre')) {
     estableceNombreUsuario();
 } else {
     let storedName = localStorage.getItem('nombre');
