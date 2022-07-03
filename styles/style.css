@@ -1,0 +1,63 @@
+html {
+    font-size: 10px;
+    font-family: "Open Sans", sans-serif; /* Google fonts */
+    background-color: #88b3da;
+}
+/* body es un elemento de bloque */
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+                    /* selectores */
+/* selector de elemento */
+h1{
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #88b3da;
+    text-shadow: 3px 3px 2px black;
+    /* El primer px asigna el desplazamiento horizontal de la sombra: 
+    —qué tan lejos la mueve a la derecha—. Un valor negativo la moverá a la izquierda.
+    El segundo px asigna el desplazamiento vertical de la sombra desde el texto:
+     —qué tan lejos la mueve hacia abajo—. Un negativo la desplazaría hacia arriba.
+    El tercer px asigna radio de desenfoque de la sombra:
+     —un valor grande es igual a una sombra borrosa—.
+    El cuarto valor asigna el color base de la sombra.
+    */
+}
+p, li{
+    /* propiedad : valor de propiedad */
+    color: red;
+    /* declaracion */
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+/* img es un elemento de linea, pero lo trasnformo a bloque con display */
+img {
+    display: block;
+    margin: 0px auto;
+    padding: 19px;
+    width: 150px;
+    border: 5px solid black;
+}
+
+/* Selector de identificación (ID), mas usado para js */
+#segundo-p{
+    color: green;
+}
+
+/* Selector de clase, mas usado para CSS */
+.tercer-p{
+    color: slateblue;
+}
+
+/* selector de pseudoclase:hover, en este caso selecciona p
+pero solo cuando el puntero esta sobre el */
+p:hover{
+    background-color: blue;
+}
